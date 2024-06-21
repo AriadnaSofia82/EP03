@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Nosotros</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="icon" type="imagen.webp" href="webfonts/images.png">
+    <script src="https://kit.fontawesome.com/fefebe7b5f.js" crossorigin="anonymous"></script>
+    <style>
+        section{
+            display: grid;
+            grid-template-areas: "head head" "body img" "pie pie";
+            grid-template-columns: 4fr 2fr;
+            margin-left: 5%;
+            gap: 20px;
+            margin-right: 5%;
+        }
+        #head{
+            grid-area: head;
+            background-color: #00007a;
+            color: white;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+        }
+        #body{
+            grid-area: body;
+            text-decoration-color: black;
+            align-items: center;
+        }
+        #body img{
+            margin: 10px;
+            box-shadow: black;
+            justify-content: center;
+            box-shadow: 5px 5px 10px #ca6201;
+            height: 30%;
+            width: 25%;
+        }
+        img{
+            grid-area: img;
+        }
+        #pie{
+            grid-area: pie;
+            background-color: #00007a;
+            color: white;
+            text-align: center;
+        }
+        footer{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <audio controls autoplay loop>
+            <source src="audio/Mi video-highlight.mp4" type="audio/mp4">
+        </audio>
+        <header>
+            <h1>fifty coffees</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html"><i class="fa-regular fa-heart"></i>Inicio</a></li>
+                    <li class="nosotros"><a href="nosotros.html"><i class="fa-solid fa-people-group"></i>Nosotros</a></li>
+                    <li><a href="blog.html"><i class="fa-solid fa-pencil"></i>Blog</a></li>
+                    <li><a href="galeria.html"><i class="fa-solid fa-image"></i>Galeria</a></li>
+                    <li><a href="videos.html"><i class="fa-solid fa-video"></i>Video</a></li>
+                    <li><a href="contactos.html"><i class="fa-solid fa-id-card"></i>Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <article id="head">
+                <h3>Nosotros</h3>
+            </article>
+            <article id="body">
+                <p style="color: black; font-size: 30px;"><strong>¿Quiénes somos?</strong></p>
+                <p style="border-top: 1px solid orange; color: black; padding-top: 10px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque officiis magni aperiam. Explicabo quis vitae odit veritatis repudiandae fugit distinctio cumque maxime id, voluptate libero, vel delectus ea nulla enim, impedit animi sit. A saepe autem doloremque in ut iure, eius totam! Praesentium ducimus doloremque modi. Eaque voluptates debitis voluptatem ducimus mollitia at consequuntur? Dolorum necessitatibus assumenda unde, veritatis delectus quod quo ducimus praesentium voluptatum at dignissimos id soluta ea itaque, tenetur minima quisquam.<br></p>
+                <p style="border-bottom: 1px solid orange; color: black; margin: 10px; padding-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur et voluptate nesciunt maiores sit, velit asperiores facilis, aliquam, ipsa consectetur porro iste beatae quaerat molestias officiis incidunt? Quod, ab nobis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptate iusto sed, eos aspernatur et nobis in esse labore placeat. Possimus corrupti consectetur distinctio quas odit quo quasi molestiae expedita.</p>
+                <img src="img/1520223397609.jpeg" style="margin-left: 23%; margin-right: 5%;">
+                <img src="img/trabajo-en-equipo-684x384.jpg">
+            </article>
+            <img src="img/1000_F_121871284_aLzpFa6TIvZtvoSv4vlPGZoIfc5uZQVz.jpg">
+            <div id="pie">
+                <p style="color: white; font-weight: bold;">Copy right 2024 - Todos los Derechos Reservados</p>
+            </div>
+        </section>
+        <footer>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </footer>
+    </main>
+</body>
+</html>

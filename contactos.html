@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Contactos</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="icon" type="imagen.webp" href="webfonts/images.png">
+    <script src="https://kit.fontawesome.com/fefebe7b5f.js" crossorigin="anonymous"></script>
+    <style>
+        #body{
+            background: linear-gradient(to right, #a56c2a,#eba86a,white);
+        }
+        section{
+            display: grid;
+            grid-template-areas: "table form" "footer footer";
+            grid-template-columns: 3fr 2fr;
+            margin-left: 5%;
+            gap: 20px;
+            margin-right: 5%;
+            font-size: 25px;
+        }
+        #info{
+            grid-area:table;
+        }
+        #info p, #div p{
+            color: #a00909;
+            font-weight: bold;
+            margin-left: 21%;
+        }
+        table{
+            color: black;
+            border-collapse: collapse;
+            border: white;
+            margin-left: 15%;
+        }
+        td{
+            padding-left: 5px;
+            padding-top: 5px;
+            margin-right: 15%;
+        }
+        form{
+            color: black;
+            font-size: 25px;
+        }
+        #div{
+            grid-area:form;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .mapa{
+            grid-area: footer;
+            margin: 20px;
+            border: 1px solid red;
+            background-color: white;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <audio controls autoplay loop>
+            <source src="audio/Mi video-highlight.mp4" type="audio/mp4">
+        </audio>
+        <header>
+            <h1>fifty coffees</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html"><i class="fa-regular fa-heart"></i>Inicio</a></li>
+                    <li><a href="nosotros.html"><i class="fa-solid fa-people-group"></i>Nosotros</a></li>
+                    <li><a href="blog.html"><i class="fa-solid fa-pencil"></i>Blog</a></li>
+                    <li><a href="galeria.html"><i class="fa-solid fa-image"></i>Galeria</a></li>
+                    <li><a href="videos.html"><i class="fa-solid fa-video"></i>Video</a></li>
+                    <li class="nosotros"><a href="contactos.html"><i class="fa-solid fa-id-card"></i>Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="body">
+            <section>
+                <div id="info">
+                    <p>Información de Contacto</p>
+                    <table border>
+                        <tr>
+                            <td style="font-weight: bold;">Dirección:</td>
+                            <td colspan="2">Jr. Carabaya 552 - Lima Perú<br> Jr Camána 758 - Lima Perú &nbsp;&nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;">Teléfonos:</td>
+                            <td>997 577 470 | 980 978 484 | (01)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>5335242</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;">Email:</td>
+                            <td>info@fiftycoffes.com</td>
+                        </tr>
+                    </table>
+                    <p>Horario de atención personal</p>
+                    <table border>
+                        <tr>
+                            <td><strong>Area de ventas:</strong><br>De Lunes a Viernes de 8pm a 6pm.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
+                    </table>
+                    <img src="img/Blog-Ventus-Cafe.png" style="margin-top: 20px; align-items: center;margin-left: 30%;">
+                </div>
+                <nav id="div">
+                    <p>Dejanos tu comentario</p>
+                    <form action="" method="get" name="inscripcion" style="margin-right: 70px; font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
+                        Nombre y Apellido <br><input type="text" name="nombre_apellido" style="width:120%;margin-bottom: 5px; margin-top: 5px;"><br>
+                        Celular* <br><input type="text" name="cel" required style="width:120%;margin-bottom: 5px; margin-top: 5px;" placeholder="999 999 999"><br>
+                        Correo electrónico <br><input type="email" name="correo" required style="width:120%;margin-bottom: 5px; margin-top: 5px;" placeholder="nombre@dominio.com"><br>
+                        RUC - Empresa (Opcional) <br><input type="number" name="ruc" style="width:120%;margin-bottom: 5px; margin-top: 5px;"><br>
+                        Mensaje <br><textarea name="mensaje" placeholder="Detalla tu experiencia a continuación como punto de inicio" style="width:120%;margin-bottom: 5px; margin-top: 5px; font-family: Arial, Helvetica, sans-serif; text-align: justify;"></textarea><br>
+                        <div style="justify-content: center; margin-left: 10%;">
+                            <input type="submit" value="ENVIAR" style="padding-left: 50%; padding-right: 50%; padding-top: 5%; padding-bottom: 5%; font-size: 10px; background-color: grey; color: white; border:1px solid black; border-bottom: 2px solid black; border-right: 2px solid black; align-items: center;">
+                        </div>
+                    </form>
+                </nav>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.918100150119!2d-77.0347841258638!3d-12.049155941943374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b634d43951%3A0xf40af81fb4d29242!2sJir%C3%B3n%20Carabaya%20552%2C%20Lima%2015001!5e0!3m2!1ses!2spe!4v1718949275512!5m2!1ses!2spe" width="97%" height="450" style="border:20px solid white;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <footer>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
